@@ -50,25 +50,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-.name {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.name .thillai {
-    color: #E85959;
-}
-
-.name .nayaki {
-    color: white;
-    -webkit-text-stroke: 1px #E85959;
-}
-
-.name .sudhakar {
-    color: #E85959;
-    margin-top: -10px;
-    display: block;
+#name {
+    scale: 70%;
 }
 
 nav {
