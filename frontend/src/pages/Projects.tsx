@@ -69,6 +69,18 @@ const Projects: React.FC = () => {
       techStack: ["python", "aws", "streamlit", "nlp"],
     },
     {
+      title: "Indexers Data Processing System",
+      status: "Completed",
+      date: "2025",
+      description: "large-scale data processing system for json file analysis",
+      highlights: [
+        "processed hundreds of thousands of json files efficiently",
+        "utilized pandas for data manipulation and analysis",
+        "optimized performance for large dataset handling",
+      ],
+      techStack: ["python", "pandas", "json"],
+    },
+    {
       title: "NU-CLEAR Co-op Review Platform",
       status: "Completed",
       date: "2024",
@@ -106,18 +118,6 @@ const Projects: React.FC = () => {
         "designed engaging space-themed user experience",
       ],
       techStack: ["react", "typescript", "css"],
-    },
-    {
-      title: "Indexers Data Processing System",
-      status: "Completed",
-      date: "2023",
-      description: "large-scale data processing system for json file analysis",
-      highlights: [
-        "processed hundreds of thousands of json files efficiently",
-        "utilized pandas for data manipulation and analysis",
-        "optimized performance for large dataset handling",
-      ],
-      techStack: ["python", "pandas", "json"],
     },
   ];
 

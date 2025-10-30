@@ -9,9 +9,9 @@ const About: React.FC = () => {
         <ContentCard>
           <p className="intro-text">
             Hi! I'm <span className="highlight">Thillainayaki Sudhakar</span>, a
-            Computer Science and Biology student at Northeastern University. I'm
-            passionate about building technology that makes a meaningful impact,
-            particularly in areas where
+            third-year Computer Science and Biology student at Northeastern
+            University. I'm passionate about building technology that makes a
+            meaningful impact, particularly in areas where
             <span className="highlight">
               {" "}
               data science meets real-world applications
@@ -19,15 +19,7 @@ const About: React.FC = () => {
             .
           </p>
           <p className="intro-text">
-            I'm currently pursuing my Bachelor's degree with a focus on
-            leveraging computational methods to solve complex problems in both
-            biological research and software development. I enjoy the
-            intersection of
-            <span className="highlight">
-              {" "}
-              analytical thinking and creative problem-solving
-            </span>
-            .
+            You can see some more of my work and experiences on this site :)
           </p>
         </ContentCard>
 

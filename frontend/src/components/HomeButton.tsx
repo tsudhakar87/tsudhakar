@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomeButton: React.FC = () => {
   return (
-    <Link to="/" className="button">
+    <Link to="/" className="home-button">
       Home
     </Link>
   );
