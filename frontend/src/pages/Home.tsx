@@ -1,6 +1,4 @@
 import PageLayout from "../components/PageLayout";
-import PageHeader from "../components/PageHeader";
-import DotToggle from "../components/DotToggle";
 
 const Home: React.FC = () => {
   return (

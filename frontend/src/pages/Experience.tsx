@@ -1,4 +1,3 @@
-import React from "react";
 import PageLayout from "../components/PageLayout";
 import ContentCard from "../components/ContentCard";
 import ExperienceCard from "../components/ExperienceCard";

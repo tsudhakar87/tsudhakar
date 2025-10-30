@@ -1,4 +1,3 @@
-import React from "react";
 import "../page-title-styles.css";
 
 interface PageHeaderProps {

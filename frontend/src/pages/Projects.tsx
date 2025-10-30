@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import PageLayout from "../components/PageLayout";
 import ProjectCard from "../components/ProjectCard";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ExperienceCardProps {
   jobTitle: string;
   company: string;
