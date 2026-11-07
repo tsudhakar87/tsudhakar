@@ -366,7 +366,7 @@ export default function Portfolio() {
                 location="Northeastern University"
                 dates="Oct 2024 – Present"
                 bullets={[
-                  "Lead logistics for annual healthcare hackathon; manage scheduling for participants, judges, and mentors",
+                  "Led logistics for annual healthcare hackathon; manage scheduling for participants, judges, and mentors",
                 ]}
               />
               <ExpCard

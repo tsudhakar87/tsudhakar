@@ -47,7 +47,7 @@ const Experience: React.FC = () => {
           location="Northeastern University"
           dates="October 2024 - Present"
           achievements={[
-            "Lead event logistics for ViTAL’s annual healthcare hackathon, managing supplies, food coordination, and merchandise planning",
+            "Led event logistics for ViTAL’s annual healthcare hackathon, managing supplies, food coordination, and merchandise planning",
             "Develop a scheduling system for participants, judges, speakers, and mentors and establish communication infrastructure",
           ]}
         />

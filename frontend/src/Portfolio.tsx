@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./Portfolio.css";
 import photo from "./photo.jpg";
+import PhotoCat from "./PhotoCat";
 
 const STACK = ["python", "typescript", "react", "java", "aws", "gcp", "docker", "kubernetes", "sklearn", "postgresql", "r", "django", "flask"];
 const LEARNING = ["go", "angular", "c#", ".net", "rust", "terraform", "fastapi", "pytorch", "claude", "google adk"];
@@ -230,7 +231,6 @@ export default function Portfolio() {
               <div className="hero-text">
                 <p className="prompt">
                   thillai@web<span className="sep">:</span>~<span className="sep">$</span> whoami
-                  <span className="cursor">▌</span>
                 </p>
                 <h1
                   className="name-wrap"
@@ -245,7 +245,7 @@ export default function Portfolio() {
                   <span className="n-nayaki" ref={nayakiRef}>nayaki</span>
                   <span className="name-cursor" ref={nameCursorRef}></span> <span className="n-part">Sudhakar</span>
                 </h1>
-                <p className="name-hint">^^ hover to see what to call me for short :) </p>
+                <p className="name-hint">^^ hover to see what to call me for short and click to freeze it :) </p>
                 <div className="pronounce">
                   <span className="prompt-inline">$ echo pronunciation</span>
                   <button
@@ -288,9 +288,7 @@ export default function Portfolio() {
                 </p>
               </div>
 
-              <div className="photo-slot">
-                <img className="photo-img" src={photo} alt="Thillainayaki Sudhakar" />
-              </div>
+              <PhotoCat src={photo} alt="Thillainayaki Sudhakar" />
             </div>
           </section>
 
@@ -342,19 +340,19 @@ export default function Portfolio() {
                   org="Code4Community"
                   orgHref="https://www.c4cneu.com/"
                   suffix="Northeastern University"
-                  dates="Aug 2025 – Present"
+                  dates="Aug 2025 – October 2026"
                   bullets={[
                     "Worked on a team with other student developers and designers to deliver an accounting platform for BRANCH, a health research organization",
-                    "Currently contributing to a platform for FriendshipWorks, a nonprofit dedicated to providing community and support for elders facing isolation and loneliness"
+                    "https://github.com/Code-4-Community/branch",
                   ]}
                 />
                 <ExpEntry
                   role="Event & Relations Co-Lead — ViTAL Hacks"
                   org="ViTAL: NU Healthcare Innovation Core"
                   orgHref="https://vitalnortheastern.org/"
-                  dates="Oct 2024 – Present"
+                  dates="Oct 2024 – October 2026"
                   bullets={[
-                    "Lead logistics for annual healthcare hackathon; manage scheduling for participants and mentors",
+                    "Led logistics for annual healthcare hackathon; manage scheduling for participants and mentors",
                   ]}
                 />
                 <ExpEntry
@@ -374,36 +372,18 @@ export default function Portfolio() {
             <h2 className="label">// projects</h2>
             <div className="proj-list">
               <ProjectRow
+                name="pubmed-research-assistant/"
+                title="PubMed Research Assistant"
+                tech={["python", "fastapi", "react", "gemini"]}
+                desc="PubMed + preprint search with parallel bioRxiv/medRxiv coverage, semantic relevance ranking, per-paper evidence extraction, and Gemini-synthesized summaries with citation grounding"
+                githubHref="https://github.com/tsudhakar87/pubmed-research-assistant"
+              />
+              <ProjectRow
                 name="restaurant-review-sentiment-analyzer/"
                 title="Restaurant Review Sentiment Analyzer"
                 tech={["python", "aws", "streamlit", "nlp"]}
                 desc="full-stack AWS pipeline + Streamlit dashboard for NLP sentiment analysis"
                 githubHref="https://github.com/tsudhakar87/restaurant-review-analyzer"
-              />
-              <ProjectRow
-                name="indexers-data-processing-system/"
-                title="Indexers Data Processing System"
-                tech={["python", "pandas"]}
-                desc="large-scale JSON file analysis with Pandas"
-              />
-              <ProjectRow
-                name="nu-clear-coop-review-platform/"
-                title="NU-CLEAR Co-op Review Platform"
-                tech={["flask", "mysql", "docker"]}
-                desc="Flask + MySQL review platform with Docker containerization"
-              />
-              <ProjectRow
-                name="catalyst-course-scheduler/"
-                title="Catalyst Course Scheduler"
-                tech={["typescript", "react"]}
-                desc="intelligent scheduling assistant built at hackathon"
-                githubHref="https://github.com/tsudhakar87/catalyst"
-              />
-              <ProjectRow
-                name="cosmic-checklist/"
-                title="Cosmic Checklist"
-                tech={["react", "typescript"]}
-                desc="space-themed productivity app with React + local storage"
               />
               <ProjectRow
                 name="heart-health-ds4400/"
@@ -420,12 +400,32 @@ export default function Portfolio() {
                 githubHref="https://github.com/tsudhakar87/microbiome_environment_classifier"
               />
               <ProjectRow
-                name="pubmed-research-assistant/"
-                title="PubMed Research Assistant"
-                tech={["python", "fastapi", "react", "gemini"]}
-                desc="PubMed literature search + genetic variant detection scored with NVIDIA BioNeMo, synthesized with Gemini AI"
-                githubHref="https://github.com/tsudhakar87/pubmed-research-assistant"
+                name="indexers-data-processing-system/"
+                title="Indexers Data Processing System"
+                tech={["python", "pandas"]}
+                desc="large-scale JSON file analysis with Pandas"
+                githubHref="https://github.com/NU-DS4300/practical-01-ctrl-tab-delete"
               />
+              <ProjectRow
+                name="nu-clear-coop-review-platform/"
+                title="NU-CLEAR Co-op Review Platform"
+                tech={["flask", "mysql", "docker"]}
+                desc="Flask + MySQL review platform with Docker containerization"
+                githubHref="https://github.com/loganravin4/NU-CLEAR"
+              />
+              <ProjectRow
+                name="catalyst-course-scheduler/"
+                title="Catalyst Course Scheduler"
+                tech={["typescript", "react"]}
+                desc="intelligent scheduling assistant built at hackathon"
+                githubHref="https://github.com/tsudhakar87/catalyst"
+              />
+              <ProjectRow
+                name="cosmic-checklist/"
+                title="Cosmic Checklist"
+                tech={["react", "typescript"]}
+                desc="space-themed productivity app with React + local storage"
+              />  
               <ProjectRow
                 name="bon-route/"
                 title="Bon Route"
